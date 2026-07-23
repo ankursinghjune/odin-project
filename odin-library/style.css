@@ -1,0 +1,74 @@
+/* Reset + box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* container */
+.container {
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100px;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+form label {
+    font-size: 24px;
+}
+
+form input {
+    padding: 6px 8px;
+}
+
+form button {
+    padding: 8px 15px;
+    border: none;
+    font-size: 24px;
+}
+
+/* library */
+.library-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.library-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 20px;
+}
+.library-card button {
+    border: none;
+    padding: 4px 24px;
+    margin: 4px 0;
+    width: 100%;
+    max-width: 130px;
+}
