@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ToDo List</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="intro">
+                <h1>ToDo List</h1>
+                <h2>Small steps, Big progress</h2>
+            </div>
+        </header>
+
+        <!-- layout -->
+        <div class="layout">
+            <!-- aside -->
+            <aside class="aside">
+                <div class="aside-content">
+                    <div class="project-create">
+                        <input
+                            type="text"
+                            class="project-name"
+                            name="project-name"
+                            placeholder="Project name"
+                            required
+                        />
+                        <button class="create-project-button">Create</button>
+                    </div>
+                    <div class="project-list">
+                        <!-- project lists will be added here -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- main -->
+            <main class="main">
+                <div class="project-header">
+                    <div class="project-info">
+                        <div class="project-info-heading">
+                            <h3 class="project-heading">
+                                Open a project to see your ToDo List
+                            </h3>
+                        </div>
+                        <div class="project-buttons">
+                            <!-- project buttons will be added here -->
+                        </div>
+                        <dialog class="create-todo-dialog">
+                            <form method="dialog">
+                                <input
+                                    type="text"
+                                    name="todo-title"
+                                    placeholder="Title"
+                                    required
+                                />
+
+                                <textarea
+                                    name="todo-description"
+                                    placeholder="Description"
+                                    rows="2"
+                                ></textarea>
+
+                                <label>
+                                    <input type="checkbox" name="priority" />
+                                    High priority
+                                </label>
+
+                                <div class="todo-create-buttons">
+                                    <button type="submit">Save</button>
+                                    <button type="reset">Discard</button>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <div class="todo-list-container">
+                    <!-- todo list will be added here -->
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

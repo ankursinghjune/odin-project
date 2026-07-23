@@ -1,0 +1,229 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: cursive;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    background: #1e293b;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+/* ---------- LAYOUT ---------- */
+.layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: calc(100vh - 90px);
+}
+
+/* ---------- ASIDE ---------- */
+.aside {
+    background: #ffffff;
+    border-right: 1px solid #9da2ac;
+    padding: 1rem;
+}
+
+.project-create {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-name {
+    padding: 0.5rem;
+    border: 1px solid #cbd5f5;
+    border-radius: 4px;
+}
+
+.create-project-button {
+    padding: 0.5rem 0.75rem;
+    background: #4338ca;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-item {
+    padding: 0.5rem;
+    text-align: left;
+    background: #9da2ac;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ---------- MAIN ---------- */
+.main {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.project-header {
+    margin-bottom: 1rem;
+}
+
+.project-heading {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.back-button,
+.add-project-button,
+.delete-project-button {
+    padding: 0.4rem 0.7rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.back-button {
+    background: #475569;
+}
+.add-project-button {
+    background: #16a34a;
+}
+.delete-project-button {
+    background: #dc2626;
+}
+
+/* ---------- TODO LIST ---------- */
+.todo-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.todo-item {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #9da2ac;
+}
+
+.todo-item h4 {
+    margin-bottom: 0.25rem;
+}
+
+.todo-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.todo-controls {
+    display: flex;
+}
+
+.todo-item button {
+    padding: 0.1rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin: 0 0.1rem;
+}
+
+.delete-todo-button {
+    background: #dc2626;
+}
+
+.toggle-todo-button {
+    background: #16a34a;
+}
+
+/* ---------- DIALOG ---------- */
+.create-todo-dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 500px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.create-todo-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.create-todo-dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.create-todo-dialog input,
+.create-todo-dialog textarea {
+    padding: 0.5rem;
+    border: 1px solid #cbd5f5;
+    border-radius: 4px;
+}
+
+.todo-create-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.todo-create-buttons button {
+    padding: 0.4rem 0.7rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-create-buttons button[type="submit"] {
+    background: #16a34a;
+    color: white;
+}
+
+.todo-create-buttons button[type="reset"] {
+    background: #dc2626;
+    color: white;
+}
